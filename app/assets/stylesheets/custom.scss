@@ -1,7 +1,6 @@
-@import "bootstrap-sprockets";
-@import "bootstrap";
-
-$gray-medium-light: #eaeaea;
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+@import 'define_color.scss';
 
 body {
   padding-top: 100px;
@@ -47,9 +46,6 @@ p {
   line-height: 1.7em;
 }
 
-
-/* header */
-
 #logo {
   color: white;
   float: left;
@@ -64,8 +60,6 @@ p {
     text-decoration: none;
   }
 }
-
-/* footer */
 
 footer {
   border-top: 1px solid $gray-medium-light;
@@ -89,4 +83,8 @@ footer {
       margin-left: 15px;
     }
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> filling-in-layout
