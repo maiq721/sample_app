@@ -5,3 +5,5 @@ validate:
     maximum: 255
   password:
     minimum: 6
+gravatar:
+  size: 80
