@@ -7,3 +7,5 @@ validate:
     minimum: 6
 gravatar:
   size: 80
+session_controller:
+  session: 1

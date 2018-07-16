@@ -6,7 +6,7 @@ class UsersController < ApplicationController
   def show
     @user = User.find_by id: params[:id]
     return if @user
-    flash[:warning] = t :show 
+    flash[:warning] = t :show
     redirect_to root_path
   end
 
@@ -24,7 +24,7 @@ class UsersController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit :name, :email, :password, 
+    params.require(:user).permit :name, :email, :password,
       :password_confirmation
-  end 
+  end
 end
