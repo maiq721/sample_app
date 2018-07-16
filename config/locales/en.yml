@@ -1,7 +1,7 @@
 en:
   users:
     new:
-      titles: "Sing up"
+      titles: "Sign up"
       creates: "Create"
     show:
       find: "Can't find this user"
@@ -10,5 +10,24 @@ en:
     error_messages:
       error: "error"
       form_error_warning: "The form contains %{errors_count} error."
+  sessions:
+    new:
+      login: "Log in"
+      signup_now: "Sign Up Now"
+      newuser: "New user? "
+    create:
+      danger: "Invalid email/password combination"
   welcome: "Welcome to the Sample App!"
   show: "User not found with the requested id"
+  views:
+    layouts:
+      header:
+        sample_app: "sample app"
+        home: "Home"
+        help: "Help"
+        users: "Users"
+        account: "Account"
+        profile: "Profile"
+        setting: "Settings"
+        logout: "Log out"
+        login: "Log in"
