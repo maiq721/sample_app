@@ -1,11 +1,4 @@
 en:
-  users:
-    new:
-      titles: "Sign up"
-      creates: "Create"
-    show:
-      find: "Can't find this user"
-      error: "error"
   shared:
     error_messages:
       error: "error"
@@ -20,6 +13,10 @@ en:
       danger: "Invalid email/password combination"
   welcome: "Welcome to the Sample App!"
   show: "User not found with the requested id"
+  update: "Profile updated"
+  log_in: "Please log in."
+  delete: "User deleted"
+  cannot_del: "Can't delete account"
   views:
     layouts:
       header:
@@ -32,3 +29,24 @@ en:
         setting: "Settings"
         logout: "Log out"
         login: "Log in"
+  users:
+    edit:
+      title: "Edit User"
+      update: "Update your profile"
+      confirm: "Confirmation"
+      save_change: "Save change"
+      change: "Change"
+    index:
+      all_user: "All User"
+    user:
+      del: "Delete"
+      sure: "You sure?"
+    form:
+      creates: "Create"
+    new:
+      titles: "Sign up"
+    show:
+      find: "Can't find this user"
+      error: "error"
+  app_controller:
+    user_not_exit: "Can't found this user"

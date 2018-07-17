@@ -9,3 +9,8 @@ gravatar:
   size: 80
 session_controller:
   session: 1
+user_controller:
+  per_paginate: 20
+views:
+  users:
+    gravatar: 50
