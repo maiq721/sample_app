@@ -24,7 +24,7 @@ users = User.order(:created_at).take 6
 end
 
 users = User.all
-user  = users.first
+user = users.first
 following = users[2..50]
 followers = users[3..40]
 following.each {|followed| user.follow followed}
