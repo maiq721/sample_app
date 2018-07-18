@@ -53,19 +53,4 @@ class UsersController < ApplicationController
     params.require(:user).permit :name, :email, :password,
       :password_confirmation
   end
-
-  def logged_in_user
-    return if logged_in?
-      flash[:danger] = t ".log_in"
-      redirect_to login_path
-  end 
-
-  def correct_user
-    @user = User.find_by id: params[:id]
-    redirect_to root_path unless current_user? @user
-  end
-
-  def verify_admin
-    redirect_to root_path unless current_user.admin?
-  end
 end
