@@ -14,3 +14,6 @@ views:
     gravatar: 50
 user_controller:
   per_paginate: 20
+model:
+  user:
+    password_reset_expired: 2

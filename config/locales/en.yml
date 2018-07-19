@@ -9,6 +9,7 @@ en:
       signup_now: "Sign Up Now"
       newuser: "New user? "
       remember: "Remember me on this computer"
+      forget_pass: "(forgot password)"
     create:
       danger: "Invalid email/password combination"
   welcome: "Welcome to the Sample App!"
@@ -17,7 +18,6 @@ en:
   log_in: "Please log in."
   delete: "User deleted"
   cannot_del: "Can't delete account"
-  check: "Please check your email to activate your account."
   check_mail: "Account not activated. Check your email for the activation link."
   views:
     layouts:
@@ -52,19 +52,47 @@ en:
     show:
       find: "Can't find this user"
       error: "error"
+    create:
+      check: "Please check your email to activate your account."
   app_controller:
     user_not_exit: "Can't found this user"
   user_mailer:
     account_activation:
       sample: "Sample App"
       hi : "Hi"
-      welcom_to_app: "Welcome to the Sample App! 
+      welcom_to_app: "Welcome to the Sample App!
         Click on the link below to activate your account:"
       activate: "Activate"
+      actived: "Account activated!"
+    password_reset:
+      pass_reset: "Password reset"
+      p_below: "To reset your password click the link below:"
+      reset_pass: "Reset password"
+      p_link: "This link will expire in two hours."
+      p_ignore: "If you did not request your password to be reset, 
+        please ignore this email and your password will stay as it is."
+    greeting: "Hi"
+    subject: "Account activation"
+    subject_pass_reset: "Password reset"
   account_activation_controller:
     invalid: "Invalid activation link"
-  mailer:
-    user_mailer:
-      greeting: "Hi"
-      subject: "Account activation"
-  actived: "Account activated!"
+  password_resets:
+    new:
+      for_pass: "Forgot password"
+      submit: "Submit"
+    create:
+      sent_email: "Email sent with password reset instructions"
+      email_not_found: "Email address not found"
+    get_user:
+      user_not found: "Not found"
+    update:
+      reset_success: "Password has been reset."
+      cant_be_empty: "can't be empty"
+    edit:
+      reset_password: "Reset password"
+      password_confirmation: "Confirmation"
+      update_pass: "Update password"
+    check_expiration:
+      expire_pass: "Password reset has expired."
+    load_user:
+      warning: "Email is not valid"
