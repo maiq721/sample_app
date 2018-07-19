@@ -17,6 +17,8 @@ en:
   log_in: "Please log in."
   delete: "User deleted"
   cannot_del: "Can't delete account"
+  check: "Please check your email to activate your account."
+  check_mail: "Account not activated. Check your email for the activation link."
   views:
     layouts:
       header:
@@ -30,6 +32,8 @@ en:
         logout: "Log out"
         login: "Log in"
   users:
+    new:
+      titles: "Sign up"
     edit:
       title: "Edit User"
       update: "Update your profile"
@@ -50,3 +54,17 @@ en:
       error: "error"
   app_controller:
     user_not_exit: "Can't found this user"
+  user_mailer:
+    account_activation:
+      sample: "Sample App"
+      hi : "Hi"
+      welcom_to_app: "Welcome to the Sample App! 
+        Click on the link below to activate your account:"
+      activate: "Activate"
+  account_activation_controller:
+    invalid: "Invalid activation link"
+  mailer:
+    user_mailer:
+      greeting: "Hi"
+      subject: "Account activation"
+  actived: "Account activated!"
