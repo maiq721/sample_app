@@ -7,23 +7,23 @@ class ApplicationController < ActionController::Base
 
   def correct_user
     @user = User.find_by id: params[:id]
-    redirect_to root_url unless current_user? @user
+    redirect_to root_path unless current_user? @user
   end
 
   def verify_admin
-    redirect_to root_url unless current_user.admin?
+    redirect_to root_path unless current_user.admin?
   end
   
   def logged_in_user
     return if logged_in?
-    flash[:danger] = t :log_in
-    redirect_to login_url
+    flash[:danger] = t ".log_in"
+    redirect_to login_path
   end 
 
   def load_user
     @user = User.find_by id: params[:id]
     return if @user
-    flash[:warning] = t :user_not_exit
-    redirect_to root_url
+    flash[:warning] = t ".user_not_exit"
+    redirect_to root_path
   end
 end

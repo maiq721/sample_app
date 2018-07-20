@@ -14,6 +14,23 @@ views:
     gravatar: 50
 user_controller:
   per_paginate: 20
+  show_5: 5
 model:
   user:
     password_reset_expired: 2
+  microposts:
+    maximum: 140
+    byte: 5
+uploader:
+  picture_uploader:
+    limit_height: 400
+    limit_width: 400
+micropost:
+  size: 50
+show_limit:
+  show_10: 10
+shared:
+  user_info:
+    size: 50
+microposts_controller:
+  item_num: 10

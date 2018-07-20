@@ -3,6 +3,19 @@ en:
     error_messages:
       error: "error"
       form_error_warning: "The form contains %{errors_count} error."
+    micropost_form: 
+      post: "Post"
+      placeholder: "Compose new micropost..."
+    user_info:
+      view: "view my profile"
+  static_pages:
+    home:
+      fd: "Micropost Feed"
+      signup_now: "Sign up now!"
+      welcome_to_app: "Welcome to the Sample App"
+      home_page: "This is the home page for the"
+      ror: "Ruby on Rails Tutorial"
+      app: "sample application."
   sessions:
     new:
       login: "Log in"
@@ -12,13 +25,13 @@ en:
       forget_pass: "(forgot password)"
     create:
       danger: "Invalid email/password combination"
+      check_mail: "Account not activated. Check your email for the activation link."
   welcome: "Welcome to the Sample App!"
   show: "User not found with the requested id"
   update: "Profile updated"
   log_in: "Please log in."
   delete: "User deleted"
   cannot_del: "Can't delete account"
-  check_mail: "Account not activated. Check your email for the activation link."
   views:
     layouts:
       header:
@@ -52,6 +65,7 @@ en:
     show:
       find: "Can't find this user"
       error: "error"
+      microposts_count_show: "Microposts %{microposts_count} ."
     create:
       check: "Please check your email to activate your account."
   app_controller:
@@ -63,7 +77,6 @@ en:
       welcom_to_app: "Welcome to the Sample App!
         Click on the link below to activate your account:"
       activate: "Activate"
-      actived: "Account activated!"
     password_reset:
       pass_reset: "Password reset"
       p_below: "To reset your password click the link below:"
@@ -77,22 +90,38 @@ en:
   account_activation_controller:
     invalid: "Invalid activation link"
   password_resets:
-    new:
-      for_pass: "Forgot password"
-      submit: "Submit"
+      new:
+        for_pass: "Forgot password"
+        submit: "Submit"
+      create:
+        sent_email: "Email sent with password reset instructions"
+        email_not_found: "Email address not found"
+      get_user:
+        user_not found: "Not found"
+      update:
+        reset_success: "Password has been reset."
+        cant_be_empty: "can't be empty"
+      edit:
+        reset_password: "Reset password"
+        password_confirmation: "Confirmation"
+        update_pass: "Update password"
+      check_expiration:
+        expire_pass: "Password reset has expired."
+  microposts:
     create:
-      sent_email: "Email sent with password reset instructions"
-      email_not_found: "Email address not found"
-    get_user:
-      user_not found: "Not found"
-    update:
-      reset_success: "Password has been reset."
-      cant_be_empty: "can't be empty"
+      success_create: "Micropost created!"
+    destroy:
+      deleted: "Micropost deleted"
+      fail: "Micropost delete fail"
+    micropost:
+      confirm_sure: "You sure?"
+      delete: "Delete"
+      post: "Post %{time} ago."
+  model:
+    microposts:
+      error_add: "should be less than 5MB"
+  account_activations:
     edit:
-      reset_password: "Reset password"
-      password_confirmation: "Confirmation"
-      update_pass: "Update password"
-    check_expiration:
-      expire_pass: "Password reset has expired."
-    load_user:
-      warning: "Email is not valid"
+      actived: "Account activated!"
+  application:
+    max_size: "Maximum file size is 5MB. Please choose a smaller file."
