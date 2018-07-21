@@ -8,6 +8,9 @@ en:
       placeholder: "Compose new micropost..."
     user_info:
       view: "view my profile"
+    stats:
+      followers_user_path: "followers"
+      following_user_path: "following"
   static_pages:
     home:
       fd: "Micropost Feed"
@@ -68,6 +71,13 @@ en:
       microposts_count_show: "Microposts %{microposts_count} ."
     create:
       check: "Please check your email to activate your account."
+    follow: 
+      follow: "Follow"
+    unfollow:
+      unfollow: "Unfollow"
+    show_follow:
+      view_profile: "View my profile"
+      micropost_show: "Microposts:"
   app_controller:
     user_not_exit: "Can't found this user"
   user_mailer:
@@ -116,7 +126,7 @@ en:
     micropost:
       confirm_sure: "You sure?"
       delete: "Delete"
-      post: "Post %{time} ago."
+      posts: "Posted %{time} ago"
   model:
     microposts:
       error_add: "should be less than 5MB"
@@ -125,3 +135,12 @@ en:
       actived: "Account activated!"
   application:
     max_size: "Maximum file size is 5MB. Please choose a smaller file."
+  user_controller:
+    following:
+      not_follow: "You don't follow any one"
+      title_following: "Following"
+    followers:
+      dont_follow: "No one follow"
+      title_follower: "Followers"
+  relationships:
+    user_not_exist: "User doesn't exist."

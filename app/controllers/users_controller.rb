@@ -47,10 +47,31 @@ class UsersController < ApplicationController
     redirect_to users_path
   end
 
+  def following
+    @title = t ".title_following"
+    @user  = User.find_by id: params[:id]
+    if @user
+      @users = @user.following.page(params[:page]).per Settings.user_controller.following.show_follow
+      render :show_follow
+    else
+      flash[:warning] =  t ".not_follow"
+    end
+  end
+
+  def followers
+    @title = t ".title_follower"
+    @user  = User.find_by id: params[:id]
+    if @user
+      @users = @user.followers.page(params[:page]).per Settings.user_controller.following.show_follow
+      render :show_follow
+    else
+      flash[:warning] = t ".dont_follow"
+    end
+  end
+
   private
 
   def user_params
-    params.require(:user).permit :name, :email, :password,
-      :password_confirmation
+    params.require(:user).permit :name, :email, :password, :password_confirmation
   end
 end

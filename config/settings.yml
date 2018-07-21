@@ -12,9 +12,12 @@ session_controller:
 views:
   users:
     gravatar: 50
+    show_follow: 30
 user_controller:
   per_paginate: 20
   show_5: 5
+  following:
+    show_follow: 10
 model:
   user:
     password_reset_expired: 2
