@@ -77,7 +77,7 @@ en:
       unfollow: "Unfollow"
     show_follow:
       view_profile: "View my profile"
-      micropost_show: "Microposts:"
+      micropost_show: "Microposts: %{post_count}"
   app_controller:
     user_not_exit: "Can't found this user"
   user_mailer:
